@@ -27,6 +27,10 @@ public class Lambda{
         Division div = (a,b)->{
             System.out.println("Division is " + a/b);
         };
+
+        add.meth(2, 4);
+        sub.meth(4, 2);
+        div.meth(10, 2);
     }
 
 }
