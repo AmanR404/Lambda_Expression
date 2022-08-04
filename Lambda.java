@@ -4,15 +4,21 @@ interface NumberPlayList{
 }
 
 public class Lambda{
+
+    static void isEvenFunction(int element){
+        if(element%2 == 0){
+            System.out.println(element);
+        }
+    }
     public static void main(String[] args) {
         NumberPlayList playlist = new NumberPlayList() {
 
             @Override
             public void meth(int[] array) {
                 for (int element : array) {
-                    System.out.println(element*element);                    
-                }
-            }  
+                    isEvenFunction(element);
+                    }                   
+                } 
         };
     }
 }
